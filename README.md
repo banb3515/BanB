@@ -1,24 +1,6 @@
-# banb
+# **BanB**
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+> ### **개발 정보**
+>
+> -   언어 - [JavaScript](https://developer.mozilla.org/ko/docs/Web/JavaScript)
+> -   프레임워크 - [Vue.js](https://vuejs.org/index.html)
