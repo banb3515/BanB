@@ -64,7 +64,7 @@
     }
 
     // 'PC 버전으로 보기' 상태인지 확인
-    if (container.className == 'pc-container') {
+    if (container.classList.contains('pc-container')) {
       // 가로, 세로 탐지
       screen.orientation.onchange = function () {
         let type = screen.orientation.type.split('-')[0]
@@ -74,6 +74,7 @@
       // 참 크기 조절 탐지
       window.onresize = function () {
         // 너비 600이하 시 모바일 버전으로 변경
+        console.log('test')
         if (window.innerWidth <= 600)
           changeMode('portrait')
         else
