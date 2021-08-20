@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <div v-show="!$isMobile()" class="empty" style="background-color: #4a5053; background-image: linear-gradient(180deg, #4a5053 0%, #434343 74%);"><wbr></div>
+    <div v-show="!$isMobile()" class="empty dark-gradient-background"><wbr></div>
 
-    <div id="container" :class="{ 'pc-container': !$isMobile() }">
+    <div id="container" class="dark-gradient-background" :class="{ 'pc-container': !$isMobile() }">
       <!-- Header -->
       <Header id="header" />
 
@@ -10,7 +10,7 @@
       <router-view id="content" class="content"></router-view>
     </div>
 
-    <div v-show="!$isMobile()" class="empty" style="background-color: #4a5053; background-image: linear-gradient(180deg, #4a5053 0%, #434343 74%);"><wbr></div>
+    <div v-show="!$isMobile()" class="empty dark-gradient-background"><wbr></div>
   </div>
 </template>
 
@@ -19,13 +19,6 @@
   import Header from './components/layout/Header.vue'
 
   export default {
-    metaInfo: {
-      meta: [
-        { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' },
-        { name: 'HandheldFriendly', content: 'true' }
-      ]
-    },
     name: 'App',
     components: {
       Header
