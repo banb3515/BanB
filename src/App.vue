@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div v-show="!$isMobile()" class="empty"><wbr></div>
+    <div v-show="!$isMobile()" class="empty" style="background-color: #4a5053; background-image: linear-gradient(180deg, #4a5053 0%, #434343 74%);"><wbr></div>
 
     <div id="container" :class="{ 'pc-container': !$isMobile() }">
       <!-- Header -->
@@ -10,7 +10,7 @@
       <router-view id="content" class="content"></router-view>
     </div>
 
-    <div v-show="!$isMobile()" class="empty"><wbr></div>
+    <div v-show="!$isMobile()" class="empty" style="background-color: #4a5053; background-image: linear-gradient(180deg, #4a5053 0%, #434343 74%);"><wbr></div>
   </div>
 </template>
 
