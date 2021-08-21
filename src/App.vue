@@ -7,7 +7,7 @@
       <Header id="header" />
 
       <!-- View Content -->
-      <router-view id="content" class="content"></router-view>
+      <router-view id="content"></router-view>
     </div>
 
     <div v-show="!$isMobile()" class="empty dark-gradient-background"><wbr></div>
@@ -25,6 +25,9 @@
     }
   }
 
+  // 화면이 회전되었는지 확인
+  let orientationChanged = false
+
   // 모드 변경
   let changeMode = function (type) {
     let container = document.getElementById('container')
@@ -35,9 +38,7 @@
     if (type == 'portrait') {
       display = 'none'
       container.style.width = '100%'
-    } 
-    // PC 버전
-    else if (type == 'landscape')
+    } else if (type == 'landscape')
       container.style.width = '50%'
 
     Array.prototype.forEach.call(emptys, e => {
@@ -68,13 +69,19 @@
       // 가로, 세로 탐지
       screen.orientation.onchange = function () {
         let type = screen.orientation.type.split('-')[0]
+        orientationChanged = true
         changeMode(type)
       }
 
       // 참 크기 조절 탐지
       window.onresize = function () {
+        // 화면 회전 이벤트와 겹치지 않도록 방지
+        if (orientationChanged) {
+          orientationChanged = false
+          return
+        }
+
         // 너비 600이하 시 모바일 버전으로 변경
-        console.log('test')
         if (window.innerWidth <= 600)
           changeMode('portrait')
         else

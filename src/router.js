@@ -1,19 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from './views/Home'
+import NotFound from './views/NotFound'
+import Index from './views/Index'
+import Profile from './views/Profile'
 import Portfolio from './views/Portfolio'
 import About from './views/About'
 
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-    mode: "history",
+    mode: 'history',
     routes: [
-        { path: "/", component: Home },
-        { path: "/Home", component: Home },
-        { path: "/Index", component: Home },
-        { path: "/Portfolio", component: Portfolio },
-        { path: "/About", component: About },
+        { path: '*', component: NotFound },
+        { path: '/', component: Index },
+        { path: '/Index', component: Index },
+        { path: '/Profile', component: Profile },
+        { path: '/Portfolio', component: Portfolio },
+        { path: '/About', component: About },
     ]
 })
 

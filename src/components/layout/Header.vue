@@ -11,7 +11,7 @@
 
         <b-collapse id="navbar-toggle-collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-                <b-nav-item href="/Home">Home</b-nav-item>
+                <b-nav-item href="/Profile">Profile</b-nav-item>
                 <b-nav-item href="/Portfolio">Portfolio</b-nav-item>
                 <b-nav-item href="/About">About</b-nav-item>
             </b-navbar-nav>
