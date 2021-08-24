@@ -41,8 +41,14 @@
         </b-card>
     </div>
 </template>
+
 <script>
     export default {
         name: 'Index'
     }
 </script>
+
+<style>
+    /* Index Style */
+    @import url("../css/index.css");
+</style>

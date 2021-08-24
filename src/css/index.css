@@ -1,0 +1,16 @@
+.card {
+    background-color: #525151;
+    background-image: linear-gradient(180deg, #313030 0%, #615f5f 99%);
+    padding: 5px 3px;
+    margin: 0 auto 30px auto;
+}
+
+.card-title {
+    display: inline-block;
+}
+
+.card-subtitle {
+    display: inline-block;
+    margin-left: 5px;
+    color: white;
+}
