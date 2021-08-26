@@ -65,6 +65,7 @@ body {
     border-image: radial-gradient(rgb(76, 76, 76), rgb(166, 166, 166)) 1;
     font-size: xx-large;
     color: white;
+    margin-bottom: 15px;
 }
 
 .dark-gradient-background {
