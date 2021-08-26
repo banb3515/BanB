@@ -3,7 +3,7 @@
         <!-- Profile Card -->
         <b-card title="프로필"
                 sub-title="(Profile)"
-                :img-src="require('@/assets/thumbnails/Profile.png')"
+                :img-src="require('@/assets/thumbnail/Profile.png')"
                 img-alt="Profile"
                 img-top
                 style="max-width: 30rem;">
@@ -16,7 +16,7 @@
         <!-- Portfolio Card -->
         <b-card title="포트폴리오"
                 sub-title="(Portfolio)"
-                :img-src="require('@/assets/thumbnails/Portfolio.png')"
+                :img-src="require('@/assets/thumbnail/Portfolio.png')"
                 img-alt="Portfolio"
                 img-top
                 style="max-width: 30rem;">
@@ -29,12 +29,12 @@
         <!-- About Card -->
         <b-card title="정보"
                 sub-title="(About)"
-                :img-src="require('@/assets/thumbnails/About.png')"
+                :img-src="require('@/assets/thumbnail/About.png')"
                 img-alt="About"
                 img-top
                 style="max-width: 30rem;">
             <b-card-text>
-                SNS 또는 GitLab, GitHub로 이동하거나<br>
+                GitLab, GitHub 또는 SNS로 이동하거나<br>
                 연락처를 확인할 수 있습니다.
             </b-card-text>
             <b-button href="/About" variant="primary">Go to About</b-button>
