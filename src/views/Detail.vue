@@ -11,7 +11,10 @@
         name: 'Detail',
         methods: {
             goBack: function () {
-                history.back()
+                if (window.history.length == 1)
+                    window.close()
+                else
+                    history.back()
             }
         }
     }
