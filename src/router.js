@@ -3,7 +3,8 @@ import VueRouter from 'vue-router'
 import NotFound from './views/NotFound'
 import Index from './views/Index'
 import Profile from './views/Profile'
-import Portfolio from './views/Portfolio'
+import Project from './views/Project'
+import Detail from './views/Detail'
 import About from './views/About'
 
 Vue.use(VueRouter)
@@ -15,7 +16,8 @@ const router = new VueRouter({
         { path: '/', component: Index },
         { path: '/Index', component: Index },
         { path: '/Profile', component: Profile },
-        { path: '/Portfolio', component: Portfolio },
+        { path: '/Project', component: Project },
+        { path: '/Project/:title', component: Detail },
         { path: '/About', component: About },
     ]
 })

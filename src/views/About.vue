@@ -29,21 +29,6 @@
 </script>
 
 <style>
-    .section {
-        margin: 10px 0 25px 0;
-    }
-
-    .logo {
-        border-radius: 15px;
-        height: auto;
-        margin: auto 10px;
-    }
-
-    .logo-small {
-        max-width: 25%;
-    }
-
-    .logo-medium {
-        max-width: 52%;
-    }
+    /* About Style */
+    @import url("../css/about.css");
 </style>

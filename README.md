@@ -1,6 +1,6 @@
 # **BanB**
 
-> ### **[Portfolio - BanB](http://banb.work/Portfolio/BanB)**
+> ### **[Project - BanB](http://banb.work/Project/BanB)**
 
 ---
 
